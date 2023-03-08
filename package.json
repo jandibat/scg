@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "git add . && git commit -m 'update' && git push master",
+    "deploy": "git add . && git commit -m 'update' && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
