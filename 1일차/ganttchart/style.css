@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#wrapper {
+  max-width: 800px;
+  width: 80%;
+  min-width: 520px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+#ifiwereyouiwouldjustloveme tr {
+  height: 40px;
+}
+
+#ifthisisrealloveillneverdoitagain {
+  max-width: 400px;
+  min-width: 310px;
+  width: 50%;
+}
+
+#ifthisisrealloveillneverdoitagain table {
+  height: 150px;
+}
+
+#ifthisisrealloveillneverdoitagain td:first-child {
+  width: 30%;
+}
+
+h1 {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  table-layout: fixed;
+}
+
+th {
+  font-weight: 500;
+}
+
+td {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+td:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.종류 {
+  font-weight: 700;
+}
+
+.bar:hover {
+  opacity: 50%;
+  transition: 0.5s;
+  transform: scale(1.3);
+}

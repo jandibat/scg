@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SCG 1일차 과제 - 소원</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="ifiwereyouiwouldjustloveme">
+        <h1>소원의 업무 차트</h1>
+        <table>
+          <!-- <tr>
+          <td class="ellipsis">리액트 개발강의 구매 요청</td>
+          <td>소월</td>
+        </tr> -->
+        </table>
+      </div>
+      <div id="ifthisisrealloveillneverdoitagain">
+        <h1>새 업무 추가</h1>
+        <form action="">
+          <table>
+            <tr>
+              <td>과목명</td>
+              <td>
+                <input
+                  type="text"
+                  name="과목명"
+                  id="과목명"
+                  placeholder="ex) 멍때리기"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>담당자명</td>
+              <td>
+                <input
+                  type="text"
+                  name="담당자명"
+                  id="담당자명"
+                  placeholder="ex) 김개발"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>종류</td>
+              <td>
+                <input type="radio" name="chk_info" value="행정" />행정
+                <input type="radio" name="chk_info" value="개발" />개발
+                <input type="radio" name="chk_info" value="기타" />기타
+              </td>
+            </tr>
+            <tr>
+              <td>날짜</td>
+              <td>
+                <input
+                  id="시작"
+                  type="date"
+                  name="date"
+                  min="2023-03-11"
+                  max="2023-03-17"
+                  value="2023-03-11"
+                />
+                ~
+                <input
+                  id="끝"
+                  type="date"
+                  name="date"
+                  min="2023-03-11"
+                  max="2023-03-17"
+                  value="2023-03-11"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>제출</td>
+              <td><button id="submit" type="button">등록하기</button></td>
+              <!-- <td><input type="submit" value="등록하기" /></td> -->
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <script src="script.js" , type="module"></script>
+  </body>
+</html>
