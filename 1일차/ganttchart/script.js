@@ -33,7 +33,7 @@ function generate() {
       let content = `
       <td class="종류">${종류}</td>
       ${td.repeat(시작 - 11)}
-      <td class="bar" onclick="window.open('https://naver.com')" colspan="${
+      <td class="bar" onclick="window.open('https://jandibat.github.io/scg/')" colspan="${
         끝 - 시작 + 1
       }", style="background-color: ${색}">${담당자}</td>
     `;
