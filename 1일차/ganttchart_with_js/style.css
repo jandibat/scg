@@ -11,35 +11,39 @@
   user-select: none;
 }
 
-body {
-  background-color: #cbdde5;
-}
-
 #wrapper {
-  max-width: 800px;
-  width: 80%;
-  min-width: 520px;
+  width: 660px;
   margin: auto;
-  margin-bottom: 0;
 }
 
 #ifiwereyouiwouldjustloveme tr {
   height: 40px;
 }
 
-#ifthisisrealloveillneverdoitagain {
-  max-width: 400px;
-  min-width: 310px;
-  width: 50%;
-  margin-bottom: 40px;
-}
-
 #ifthisisrealloveillneverdoitagain table {
-  height: 150px;
+  height: 180px;
 }
 
 #ifthisisrealloveillneverdoitagain td:first-child {
-  width: 30%;
+  width: 25%;
+}
+
+.종류 {
+  font-weight: 700;
+  max-width: 100px;
+}
+
+.bar {
+  border: 1px solid gray;
+}
+
+.bar:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+body {
+  background-color: #cbdde5;
 }
 
 h1 {
@@ -47,11 +51,10 @@ h1 {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
   border: 2px solid black;
-  table-layout: fixed;
   background-color: #f2efed;
+  table-layout: fixed;
 }
 
 th {
@@ -63,21 +66,16 @@ td {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  min-width: 80px;
 }
 
 td:not(:last-child) {
   border-right: 1px solid gray;
 }
 
-.종류 {
-  font-weight: 700;
-}
-
-.bar {
-  border: 1px solid gray;
-}
-
-.bar:hover {
-  transition: 0.2s;
-  transform: scale(1.1);
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
 }

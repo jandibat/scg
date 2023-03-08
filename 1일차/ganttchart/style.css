@@ -12,33 +12,25 @@
 }
 
 #wrapper {
-  max-width: 800px;
-  width: 80%;
-  min-width: 520px;
+  width: 660px;
   margin: auto;
-  margin-bottom: 0;
 }
 
 #ifiwereyouiwouldjustloveme tr {
   height: 40px;
 }
 
-#ifthisisrealloveillneverdoitagain {
-  max-width: 400px;
-  min-width: 310px;
-  width: 50%;
-}
-
 #ifthisisrealloveillneverdoitagain table {
-  height: 150px;
+  height: 180px;
 }
 
 #ifthisisrealloveillneverdoitagain td:first-child {
-  width: 30%;
+  width: 25%;
 }
 
 .종류 {
   font-weight: 700;
+  max-width: 100px;
 }
 
 .bar {
@@ -55,10 +47,8 @@ h1 {
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
   border: 2px solid black;
-  table-layout: fixed;
 }
 
 th {
@@ -70,6 +60,7 @@ td {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  min-width: 80px;
 }
 
 td:not(:last-child) {
@@ -79,7 +70,6 @@ td:not(:last-child) {
 a {
   text-decoration: none;
   color: black;
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: 100%;
 }
