@@ -11,6 +11,10 @@
   user-select: none;
 }
 
+body {
+  background-color: #cbdde5;
+}
+
 #wrapper {
   max-width: 800px;
   width: 80%;
@@ -27,6 +31,7 @@
   max-width: 400px;
   min-width: 310px;
   width: 50%;
+  margin-bottom: 40px;
 }
 
 #ifthisisrealloveillneverdoitagain table {
@@ -46,6 +51,7 @@ table {
   border-collapse: collapse;
   border: 2px solid black;
   table-layout: fixed;
+  background-color: #f2efed;
 }
 
 th {

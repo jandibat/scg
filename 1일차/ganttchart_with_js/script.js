@@ -8,18 +8,29 @@ class Bar {
   }
 }
 
-const initBarData = [
-  new Bar(),
-  new Bar("책상정리", 11, 12, "이강훈", "#A8C8F9"),
-  new Bar("버그수정", 12, 16, "권민성", "#FFCCCC"),
-  new Bar("회의준비", 14, 15, "박민지", "#B8F3B8"),
-  new Bar("실습준비", 12, 14, "한태혁", "#FFDDA6"),
-  new Bar("학습준비", 16, 17, "고현수", "#CCD1FF"),
-  new Bar("리액트 개발 강의 구매 요청", 13, 14, "홍길동", "#ccccdd"),
-];
+function storage() {
+  return JSON.parse(
+    localStorage.initBarData ||
+      JSON.stringify([
+        new Bar(),
+        new Bar("책상정리", 11, 12, "이강훈", "#A8C8F9"),
+        new Bar("버그수정", 12, 16, "권민성", "#FFCCCC"),
+        new Bar("회의준비", 14, 15, "박민지", "#B8F3B8"),
+        new Bar("실습준비", 12, 14, "한태혁", "#FFDDA6"),
+        new Bar("학습준비", 16, 17, "고현수", "#CCD1FF"),
+        new Bar("리액트 개발 강의 구매 요청", 13, 14, "홍길동", "#ccccdd"),
+      ])
+  );
+}
+
+function push(data) {
+  const a = storage();
+  a.push(data);
+  localStorage.initBarData = JSON.stringify(a);
+}
 
 function generate() {
-  document.querySelector("table").innerHTML = initBarData
+  document.querySelector("table").innerHTML = storage()
     .map(({ 종류, 시작, 끝, 담당자, 색 }) => {
       if (시작 > 끝) return;
 
@@ -36,10 +47,10 @@ function generate() {
         ${td.repeat(시작 - 11)}
         <td
           class="bar"
-          onclick="window.location='https://jandibat.github.io/scg/'"
+          onclick="window.open('https://jandibat.github.io/scg/')"
           colspan="${끝 - 시작 + 1}"
-          style="background-color: ${색}">${담당자}
-        </td>
+          style="background-color: ${색}"
+        >${담당자}</td>
         ${td.repeat(17 - 끝)}
       `;
       return `<tr>${content}</tr>`;
@@ -55,17 +66,24 @@ document.querySelector("#submit").addEventListener("click", (e) => {
   const 시작 = document.querySelector("#시작").value;
   const 끝 = document.querySelector("#끝").value;
 
-  if (!과목명 || !담당자명) return alert("내용을 입력하세요.");
+  if (!과목명 || !담당자명) {
+    alert("내용을 입력하세요.");
+    return;
+  }
 
-  initBarData.push(
+  push(
     new Bar(
       과목명,
       Number(시작.slice(-2)),
       Number(끝.slice(-2)),
       담당자명,
-      "#e5e5e5"
+      "#dddddd"
     )
   );
+  generate();
+});
 
+document.querySelector("#reset").addEventListener("click", (e) => {
+  localStorage.clear();
   generate();
 });
