@@ -22,6 +22,7 @@ function generate() {
   document.querySelector("table").innerHTML = initBarData
     .map(({ 종류, 시작, 끝, 담당자, 색 }) => {
       if (시작 > 끝) return;
+
       if (!종류) {
         return `<tr>${Array(8)
           .fill("3/1")
@@ -51,7 +52,7 @@ document.querySelector("#submit").addEventListener("click", (e) => {
   const 시작 = document.querySelector("#시작").value;
   const 끝 = document.querySelector("#끝").value;
 
-  if (!과목명 || !담당자명) return;
+  if (!과목명 || !담당자명) return alert("내용을 입력하세요.");
 
   initBarData.push(
     new Bar(

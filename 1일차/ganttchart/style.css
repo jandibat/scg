@@ -67,6 +67,10 @@ td:not(:last-child) {
   font-weight: 700;
 }
 
+.bar {
+  border: 1px solid gray;
+}
+
 .bar:hover {
   transition: 0.2s;
   transform: scale(1.1);
