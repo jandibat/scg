@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,76 +10,179 @@
     <div id="wrapper">
       <div id="ifiwereyouiwouldjustloveme">
         <h1>소원의 업무 차트</h1>
-        <table></table>
+        <table>
+          <tbody>
+            <tr>
+              <th></th>
+              <th>3/11</th>
+              <th>3/12</th>
+              <th>3/13</th>
+              <th>3/14</th>
+              <th>3/15</th>
+              <th>3/16</th>
+              <th>3/17</th>
+            </tr>
+            <tr>
+              <td class="종류">책상정리</td>
+
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="2"
+                style="background-color: #a8c8f9"
+              >
+                이강훈
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="종류">버그수정</td>
+              <td></td>
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="5"
+                style="background-color: #ffcccc"
+              >
+                권민성
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="종류">회의준비</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="2"
+                style="background-color: #b8f3b8"
+              >
+                박민지
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="종류">실습준비</td>
+              <td></td>
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="3"
+                style="background-color: #ffdda6"
+              >
+                한태혁
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="종류">학습준비</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="2"
+                style="background-color: #ccd1ff"
+              >
+                고현수
+              </td>
+            </tr>
+            <tr>
+              <td class="종류">리액트 개발 강의 구매 요청</td>
+              <td></td>
+              <td></td>
+              <td
+                class="bar"
+                onclick="window.location='https://jandibat.github.io/scg/'"
+                colspan="2"
+                style="background-color: #ccccdd"
+              >
+                홍길동
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div id="ifthisisrealloveillneverdoitagain">
-        <h1>
-          새 업무 추가
-          <span style="font-weight: 500; font-size: 25px">(작동함)</span>
-        </h1>
-        <form action="">
+        <h1>새 업무 추가</h1>
+        <form autocomplete="off">
           <table>
-            <tr>
-              <td>과목명</td>
-              <td>
-                <input
-                  type="text"
-                  name="과목명"
-                  id="과목명"
-                  placeholder="ex) 멍때리기"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>담당자명</td>
-              <td>
-                <input
-                  type="text"
-                  name="담당자명"
-                  id="담당자명"
-                  placeholder="ex) 김개발"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>종류(no use)</td>
-              <td>
-                <input type="radio" name="chk_info" value="행정" />행정
-                <input type="radio" name="chk_info" value="개발" />개발
-                <input type="radio" name="chk_info" value="기타" />기타
-              </td>
-            </tr>
-            <tr>
-              <td>날짜</td>
-              <td>
-                <input
-                  id="시작"
-                  type="date"
-                  name="date"
-                  min="2023-03-11"
-                  max="2023-03-17"
-                  value="2023-03-11"
-                />
-                ~
-                <input
-                  id="끝"
-                  type="date"
-                  name="date"
-                  min="2023-03-11"
-                  max="2023-03-17"
-                  value="2023-03-11"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>제출</td>
-              <td><button id="submit" type="button">등록하기</button></td>
-              <!-- <td><input type="submit" value="등록하기" /></td> -->
-            </tr>
+            <tbody>
+              <tr>
+                <td>과목명</td>
+                <td>
+                  <input
+                    type="text"
+                    name="과목명"
+                    id="과목명"
+                    placeholder="ex) 멍때리기"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>담당자명</td>
+                <td>
+                  <input
+                    type="text"
+                    name="담당자명"
+                    id="담당자명"
+                    placeholder="ex) 김개발"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>종류</td>
+                <td>
+                  <input type="radio" name="chk_info" value="행정" />행정
+                  <input type="radio" name="chk_info" value="개발" />개발
+                  <input type="radio" name="chk_info" value="기타" />기타
+                </td>
+              </tr>
+              <tr>
+                <td>날짜</td>
+                <td>
+                  <input
+                    id="시작"
+                    type="date"
+                    name="date"
+                    min="2023-03-11"
+                    max="2023-03-17"
+                    value="2023-03-11"
+                  />
+                  ~
+                  <input
+                    id="끝"
+                    type="date"
+                    name="date"
+                    min="2023-03-11"
+                    max="2023-03-17"
+                    value="2023-03-11"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>제출</td>
+                <td><input type="submit" value="등록하기" /></td>
+              </tr>
+            </tbody>
           </table>
         </form>
       </div>
     </div>
-    <script src="script.js" , type="module"></script>
   </body>
 </html>
