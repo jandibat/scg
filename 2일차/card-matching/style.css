@@ -95,6 +95,7 @@ h1 {
   margin: 7px;
   border-radius: 3px;
   perspective: 300px;
+  transition: 0.1s ease;
 }
 
 .card-img {
