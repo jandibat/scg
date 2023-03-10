@@ -22,10 +22,6 @@ h1 {
   font-size: 27px;
 }
 
-img {
-  filter: brightness(80%);
-}
-
 #forflex {
   display: grid;
   grid-template-columns: auto auto;
@@ -98,5 +94,20 @@ img {
   height: 100px;
   margin: 7px;
   border-radius: 3px;
-  background-color: #ffffff;
+  perspective: 300px;
+}
+
+.card-img {
+  backface-visibility: hidden;
+  transition: 0.4s cubic-bezier(0, 0.67, 0.65, 1);
+}
+
+.card-img.front {
+  position: absolute;
+  transform: rotateY(0deg);
+  filter: brightness(85%);
+}
+
+.card-img.back {
+  transform: rotateY(-180deg);
 }
